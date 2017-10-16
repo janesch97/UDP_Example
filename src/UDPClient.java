@@ -25,7 +25,7 @@ public class UDPClient {
         String message = bufferedReader.readLine();
         sendData = message.getBytes();
 
-        InetAddress IPAddr = InetAddress.getByName("localhost")
+        InetAddress IPAddr = InetAddress.getByName("localhost");
 
         DatagramPacket sendPacket = new DatagramPacket(sendData, sendData.length, IPAddr, 5001);
         clientSocket.send(sendPacket);
