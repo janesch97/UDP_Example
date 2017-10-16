@@ -11,6 +11,8 @@ public class UDPClient {
 
     public static void main(String []args) throws Exception{
 
+        UDPClient udpClient = new UDPClient();
+        udpClient.run();
     }
 
     public void run() throws Exception{
